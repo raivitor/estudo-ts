@@ -6,7 +6,7 @@ System.register([], function (exports_1, context_1) {
         setters: [],
         execute: function () {
             View = class View {
-                constructor(selector, escapar) {
+                constructor(selector, escapar = false) {
                     this._elemento = document.querySelector(selector);
                     this._escapar = escapar;
                 }
