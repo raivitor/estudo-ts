@@ -1,4 +1,4 @@
-class Negociacao {
+export class Negociacao {
   // declaração das propriedades de classe
   constructor(
     private _data: Date,
