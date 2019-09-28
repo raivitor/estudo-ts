@@ -23,23 +23,19 @@ System.register(["./View"], function (exports_1, context_1) {
             </thead>
 
             <tbody>
-            ${model
-                        .paraArray()
-                        .map(negociacao => `
-                  <tr>
-                      <td>${negociacao.data.getDate()}/${negociacao.data.getMonth() +
-                        1}/${negociacao.data.getFullYear()}</td>
-                      <td>${negociacao.quantidade}</td>
-                      <td>${negociacao.valor}</td>
-                      <td>${negociacao.volume}</td>
-                  </tr>                        
-              `)
-                        .join("")} 
+                ${model.paraArray().map(negociacao => `
+                        <tr>
+                            <td>${negociacao.data.getDate()}/${negociacao.data.getMonth() + 1}/${negociacao.data.getFullYear()}</td>
+                            <td>${negociacao.quantidade}</td>
+                            <td>${negociacao.valor}</td>
+                            <td>${negociacao.volume}</td>
+                        <tr>
+                    `).join('')}            
             </tbody>
 
             <tfoot>
             </tfoot>
-        </table>               
+        </table>
         `;
                 }
             };
