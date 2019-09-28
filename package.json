@@ -22,6 +22,7 @@
   },
   "homepage": "https://github.com/raivitor/estudo-ts#readme",
   "devDependencies": {
+    "@types/jquery": "^2.0.42",
     "concurrently": "^4.1.2",
     "lite-server": "^2.5.4",
     "typescript": "^3.6.3"
