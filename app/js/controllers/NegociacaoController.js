@@ -6,7 +6,7 @@ System.register(["../views/index", "../models/index", "../helpers/decorators/ind
         else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
         return c > 3 && r && Object.defineProperty(target, key, r), r;
     };
-    var index_1, index_2, index_3, timer, NegociacaoController, DiaDaSemana;
+    var index_1, index_2, index_3, NegociacaoController, DiaDaSemana;
     var __moduleName = context_1 && context_1.id;
     return {
         setters: [
@@ -21,7 +21,6 @@ System.register(["../views/index", "../models/index", "../helpers/decorators/ind
             }
         ],
         execute: function () {
-            timer = 0;
             NegociacaoController = class NegociacaoController {
                 constructor() {
                     this._negociacoes = new index_2.Negociacoes();
